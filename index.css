@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', monospace;
+}
+.header{
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #00e1e9;
+
+}
+.logo ,.name{
+  font-family: 'Courier New', monospace;
+  font-weight: bolder;
+  font-size: 2em;
+  color: #3498db;
+  background: linear-gradient(to right, #00e1e9, #0399ad);
+  
+}
+.zoom-animation {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 1s ease-in-out;
+}
+    .zoom-animation:hover{
+      transform: scale(1.1);
+      /*transform: rotatey(360deg);*/
+    }
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  border: 5px solid #3498db;
+  border-radius: 16px;
+}
+.nav-option {
+  padding: 16px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+main {
+  flex: 1;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  padding: 8px;
+}
+.contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.gif {
+  width: 250px;
+  height: 250px;
+}
+h1 {
+  font-size: 2em;
+  color:cadetblue;
+  margin-bottom: 2rem;
+}
+.aboutme {
+  width: 60%;
+}
